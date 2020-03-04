@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title></title>
+</head>
+<body>
+    
+        
+        <table>
+
+
+            <form>
+            <tr>    
+                <th colspan="2"><h1>Registration Form</h1></th>
+            </tr>
+
+            <tr>
+                <td><label for="User">User id: </label></td>
+                <td><input type="text" id="User" name="user id" required minlength="7" maxlength="12"> </td> 
+            </tr>
+
+            <tr>
+                <td><label for="Password">Password: </label></td>
+                <td><input type="password" id="Password" name="user id" required minlength="7" maxlength="12"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Name">Name: </label></td>
+                <td><input type="text" id="Name" name="Name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Adress">Adress: </label></td>
+                <td><input type="text" id="Adress" name="Adress" required></td>
+            </tr>
+
+            <!--seleccion de pais-->
+
+            <tr>
+                <td><label for="Country">Country: </label></td>
+                <td><select name="Country" id="Country" required>
+                    <option>México</option>
+                    <option>Estados Unidos</option>
+                    <option>Rusia</option>
+                    <option>China</option>
+                    <option>Japon</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="Code">IP Code: </label></td>
+                <td><input type="text" id="Code" name="Code" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Mail">E-Mail: </label></td>
+                <td><input type="email" id="Mail" name="Mail" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="Sex">Sex </label></td>
+                <td><input type="radio" id="Sex" name="Male" required>Male
+                <input type="radio" id="Sex" name="Male" required>Female</td>
+            </tr>
+
+            <tr>
+                <td><label for="Language">Language </label></td>
+                <td><input type="checkbox" id="Language" name="English" required>English
+                <input type="checkbox" id="Language" name="NonEnglish" required>Non English</td>
+            </tr>
+
+            <tr>
+                <td><label for="About">About: </label></td>
+                <td><textarea id="About" rows="10" cols="30" required> </textarea></td>
+            </tr>
+
+            
+            <tr>
+                <td colspan="3" style="text-align: center;"><input type="submit"></td>
+            </tr>
+
+        </form>
+    </table>
+</body>
+</html>
