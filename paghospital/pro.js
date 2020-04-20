@@ -29,3 +29,17 @@ function iniciar(){
 		window.alert("Usuario o contraseña no son validos");
 	}
 }
+
+function enviar(){
+
+	 event.preventDefault();
+	
+	var n = document.getElementById("nom").value;
+	var a = document.getElementById("asunto").value;
+	var e = document.getElementById("email").value;
+	var t = document.getElementById("telefono").value;
+	var h = document.getElementById("hospital").value;
+	var m = document.getElementById("mensaje").value;
+
+	console.log("n");
+}

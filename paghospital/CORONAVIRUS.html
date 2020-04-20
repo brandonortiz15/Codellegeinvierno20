@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+        <title>COVID-19</title>
+    </head>
+    <style>
+    .contenedor{
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+    
+    .contacto{
+    width: auto;
+    height: 160px;
+    background-color: #F7F3FF;
+    
+}
+
+.a{
+    width: 30%;
+    height: 160px;
+    float: left;
+
+}
+
+.b{
+    width: 70%;
+    height: 160px;
+    
+    float: left;
+    text-align: center;
+
+}
+
+.headerr{
+            margin: auto;
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 105px;
+
+}
+
+li, ul{
+            list-style: none;
+}
+.nav li a{
+            
+        
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-size: 22px;
+            color: black;
+}
+
+.nav > li {
+            float: left;
+            border-right: 1px solid black;
+        }
+
+.nav a:hover{
+            background-color: #EAE1FF;
+            border-radius: 10px;
+
+}
+.nav li ul{
+            display: none;
+            position: absolute;
+}
+.nav li:hover > ul{
+            display: block;
+
+}
+.conactar{
+    text-decoration: none;
+    
+    color: white;
+    font-family: lato;
+    background-color: #2E64FE;
+    border-radius: 10px;
+
+}
+.a{
+    color: black;
+}
+.co{
+    background-color: #F7F3FF;
+    border-radius: 5px;
+
+}
+
+        .grid {
+            margin-left: 15%;
+            width: 70%;
+        }
+        .sticky {
+            position: sticky;
+            will-change: transform;
+        }
+        .sticky--top {
+            top: 0;
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .header {
+            
+        }
+        .banner {
+            color: white;
+            text-align: center;
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0em;
+            margin-right: 0em;
+        } 
+        .banner h1 {
+            margin-top: 20%;
+            margin-bottom: 20%;
+            font-size: 150px;
+            font-weight: bold;
+            text-shadow: 5px 9px rgba(0, 0, 0, 0.6);
+        }
+        .banner a {
+            color: black;
+            border-radius: 5px;
+            padding: 15px 25px;
+            background-color: green;
+            margin: 50px;
+            font-size: 18px;
+            text-decoration: none
+        }
+        .header::after {
+            bottom: 0;
+            box-shadow: 0 0.0625em 0.5em rgba(0, 0, 0, 0.9);
+            content: '';
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: opacity 0.3s;
+            z-index: -1;
+        }
+        .header.is-active::after {
+            opacity:1em;
+        }
+        .main {
+            padding-top: 6em;
+            padding-bottom: 6em;
+        }
+        h1 {
+            margin-bottom: 1.5em;
+            margin-top: 0;
+        }
+        .navigation {
+            align: center;
+            margin-bottom: .7em;
+        }
+        .navigation a {
+            color: inherit;
+            display: block;
+            text-decoration: none;
+        }
+        .navigation .is-active {
+            background-color: #000;
+            color: #fff;
+            padding-left: 1em;
+            padding-right: 1em;
+            border-radius: 999px;
+        }
+        .navigation__list {
+            list-style: none;
+            margin: -0.5em;
+            padding: 0;
+        }
+        .navigation__list--inline {
+            display: flex;
+        }
+        .navigation__item {
+            margin: 0.5em;
+        }
+
+    </style>
+
+    <script>
+        function throttle(fn, delay) {
+            let last;
+            let timer;
+
+            return () => {
+                const now = +new Date;
+                if (last && now < last + delay) {
+                    clearTimeout(timer);
+                    timer = setTimeout(() => {
+                    last = now;
+                    fn(); }, 
+                    delay);
+                } 
+                else {
+                    last = now;
+                    fn();
+                }
+            };
+        }
+        function onScroll() {
+            if (window.pageYOffset) {
+                $$header.classList.add('is-active');
+            } 
+            else {
+                $$header.classList.remove('is-active');
+            }
+        }
+        const $$header = document.querySelector('.js-header');
+        window.addEventListener('scroll', throttle(onScroll, 25));
+    </script>
+
+    <body>
+        <div class="contenedor">
+
+    <div id="linea">
+       
+    </div>
+    
+
+    <div class="contacto">
+        <div class="a">
+        <a href="pagina principal.html"><img src="logo.png"></a>
+    </div>
+<div class="b">
+     <div class="header">
+    <ul class="nav">
+    <li><a href="mapa.html">Hospitales y Centros</a></li>
+    <li><a href="seguros afiliados.html" >Seguros</a></li>
+    <li><a href="" >Especialidades</a>
+    <ul>
+        <li class="co"><a href="especialida 2.html">Laboratorio y Estudios Medicos</a></li>
+         <li class="co"><a href="especialidad 1.html">Cirugias</a></li>
+          <li class="co"><a href="especialidad 3.html">Pediatria</a></li>
+    </ul>
+    </li>
+    <li><a href="Internados.html" >Internados</a></li>
+    <li class="w"><a href="" class="conactar" >CONTACTO</a></li> 
+    </ul>
+    </div>
+    </div>  
+    </div>
+        <section id="baner">
+        <header class="header sticky sticky--top js-header">
+            <div class="grid">
+                <nav class="navigation">
+                    <ul class="navigation__list navigation__list--inline">
+                        <li class="navigation__item"><a href="#" class="is-active">INICIO</a></li>
+                        <li class="navigation__item"><a href="#que_es">¿QUÉ ES?</a></li>
+                        <li class="navigation__item"><a href="#">SÍNTOMAS</a></li>
+                        <li class="navigation__item"><a href="#">TRANSMICIÓN</a></li>
+                        <li class="navigation__item"><a href="#">PREVENCIÓN</a></li>
+                        <li class="navigation__item"><a href="#">TRATAMIENTO</a></li>
+                        <li class="navigation__item"><a href="#">CUIDADOS</a></li>
+                        <li class="navigation__item"><a href="#">ESTADÍSTICAS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="banner" style="Background-image: linear-gradient(-225deg, rgba(255,255,255,0.6) 0%, rgba(0,36,61,0.6) 50%), url(https://bit.ly/3cvwagF);">
+                <div>
+                    <h1>Covid-19</h1>
+                    <a href=#que_es>¿Qué es?</a>
+                </div>
+            </div>
+        </header>
+    </section>
+<main class="main">
+            <section id="que_es">
+                <H1>¿QUÉ ES EL COVID-19?</H1>
+                <p>estas. Mauris ullamcorper massa vitae tellus rhoncus gravida. Sed rutrum enim vitae nunc egestas, quis placerat nunc feugiat. Phasellus molestie dignissim arcu, at aliquam justo tincidunt eget. Integer non diam nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vulputate leo at urna vehicula, ac lobortis velit laoreet. Vivamus augue enim, auctor et nunc bibendum, semper aliquet orci. Nam luctus odio in nulla pulvinar pretium. Integer a mauris ultricies, tincidunt tellus sed, pulvinar sem. Quisque sollicitudin lacus vel nisi fermentum, id eleifend ex accumsan.
+                Proin ac justo mauris. In porttitor fringilla luctus. Proin nec dolor leo. Quisque ut nibh congue, cursus sapien ut, mattis mauris. Vestibulum rhoncus risus justo, vitae sollicitudin odio finibus nec. Morbi elementum sagittis sodales. Curabitur congue nisi ac diam rutrum, ut tristique nibh sagittis. Aenean pulvinar enim eget risus congue aliquet. Ut at ante hendrerit, interdum mauris eu, dapibus nisi. Nulla facilisi. Mauris a tortor a arcu efficitur sagittis. Vestibulum ante ipsum </p>
+            </section>
+        </main>
+    </div>        
+    </body>
+</html>

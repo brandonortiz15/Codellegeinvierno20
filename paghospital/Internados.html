@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+			#virus{
+				width: 100%;
+				min-height: 110px;
+				background-color: #2E64FE;
+				padding: 1px;
+				text-align: center;
+				color: white;
+				line-height:40px;
+				
+
+			}
+
+			#boton{
+
+				border-radius: 12px;
+				border:solid #81DAF5 3px;
+				background-color: white;
+				color: #81DAF5;
+				width: 30px;
+				height: 8px;
+				padding: 8px;
+				text-decoration: none;
+				margin-left: 20px;
+				
+			}
+
+
+
+			
+			html, body{
+				margin: 0;
+				padding: 0;
+
+			}
+
+			#contenedor{
+				width: auto;
+				height: 100%;
+				overflow: hidden;
+
+			}
+			
+			#logo{
+				display:block;
+				max-width:140px;
+				max-height:120px;
+				margin:auto;
+				
+				margin-top:5%;
+				
+			}
+			
+			
+			
+			
+			.contacto{
+				width: auto;
+				height: 160px;
+				
+
+			}
+
+			.a{
+				width: 30%;
+				min-height: 160px;
+				float: left;
+				background-color:white;
+			}
+
+			.b{
+				width: 70%;
+				min-height: 160px;
+
+				float: left;
+				text-align: center;
+				line-height:60px;
+				background-color: #F7F3FF;
+			}
+
+			.ref{
+
+				text-decoration: none;
+				font-size: 22px;
+				color: black;
+				padding: 15px;
+				font-family: lato;
+				border-right: 1px solid black;
+				
+
+
+			}
+
+			.ref:hover {
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+				border-radius: 10px;
+			}
+
+			.conactar{
+				text-decoration: none;
+				font-size: 22px;
+				color: white;
+				padding: 15px;
+				font-family: lato;
+				background-color: #2E64FE;
+				border-radius: 10px;
+				border:0px solid white;
+
+			}
+
+			.conactar:hover {
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+			}
+
+			.mover{
+				
+				margin-top:5%;
+				
+			}
+			
+			#activo{
+				z-index:100;
+				display:none;
+				position:fixed;
+				width:36%;
+				min-width:100px;
+				background-color:#fafafa;
+				border:3px solid #999999;
+				border-radius:20px;
+				
+				margin-left:32%;
+				margin-right:32%;
+				margin-top:100px;
+				
+				
+				
+			
+			}
+			
+			#cancelar{
+				
+				width:20px;
+				height:20px;
+				
+				margin-left:-8px;
+				margin-top:-3px;
+			
+			
+			}
+			
+			#cancelor{
+				
+				width:20px;
+				height:20px;
+				float:right;
+				margin-right:3%;
+				margin-top:10px;
+				border:0px solid white;
+				background-color:#fafafa;
+			
+			}
+			
+			.cont::-webkit-input-placeholder { 
+				color: #222222;
+				padding-left:3%;
+
+				font-size:22px;
+			}
+
+			.cont{
+			
+				border: 3px solid #0097d3;
+				width:75%;
+				height:40px;
+				border-radius:10px;
+				color:#222222;
+				font-size:22px;
+				display:block;
+				
+				margin-left:10%;
+			
+			}
+			
+			
+			
+			#area::-webkit-input-placeholder { 
+				color: #222222;
+				padding-left:3%;
+
+				font-size:22px;
+			}			
+			
+			#area{
+				margin-left:10%;
+				border: 3px solid #0097d3;
+				width:75%;
+				height:40px;
+				border-radius:10px;
+				color:#222222;
+				font-size:22px;
+				display:block;
+				resize: none;
+			
+			
+			}
+			
+			
+			#termin{
+				
+				
+				width:30%;
+				height:40px;
+				margin-left:34%;
+				margin-top:4px;
+				margin-bottom:50px;
+				font-size:20px;
+				color:white;
+				background-color:powderblue;
+				border:0px solid white;
+			
+			}
+			
+			#si{
+			
+				text-align:center;
+				font-size:40px;
+				color:#0067c6;
+			}
+			
+			#terminado{
+			
+				width:100%;
+				
+				
+			}
+			
+			#intro{
+				width:100%;
+				text-align:center;
+				font-size:50px;
+				color:#0067c6;
+				font-family:verdana;
+				
+			}
+			
+			.presentacion{
+				width:75%;
+				align:center;
+				
+			
+			}
+			
+			#orden{
+				
+				
+				width:100%;
+			}
+			
+			#orden h2{
+			
+				
+				text-align:center;
+				font-size:30px;
+				color:#4781d5;
+			
+			
+			}
+			
+			.parrafo1{
+			
+				max-width:1000px;
+				margin-left:auto;
+				margin-right:auto;
+				font-size:20px;
+				font-family:arial;
+				color:#aaaaaa;
+				
+				
+			
+			}
+			
+			.parrafo2{
+				position:absolute;
+				max-width:1000px;
+				margin:0;
+				font-size:20px;
+				font-family:arial;
+				color:#aaaaaa;
+				
+				
+			
+			}
+			
+			
+			#imagen{
+			
+				max-width:100%;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				
+				
+				
+			
+			}
+			
+			
+			
+			#parrafo2{
+			
+				
+				margin-left:30%;
+				font-size:20px;
+				font-family:arial;
+				
+				margin-right:30%;
+				
+			
+			}
+
+			#orden li{
+			
+				
+				margin-left:auto;
+				margin-right:auto;
+				width:15%;
+			
+			}	
+			
+			#tabla{
+			
+				text-align:center;
+				width:60%;
+				margin:auto;
+				
+			
+			}
+			
+			
+			
+			#tabla tr:nth-child(even){background-color: #f2f2f2;}
+			#tabla tr:hover {background-color: #ddd;}
+			#tabla tr:first-child{background-color: #0097d7;height:100px;font-size:40px;color:#ffffff}
+			
+			#tabla tr, td, table{
+				width:50%;
+				border:1px solid black;
+				border-collapse:collapse;
+				height:50px;
+				
+			}
+			
+			section{
+				margin-top:100px;
+			
+			}
+
+
+			#orden footer{
+			
+				
+				width:100%;
+
+			
+			}
+			
+			#arreglo tr, td, table{
+			
+				border:0px solid white;
+			
+			
+			}
+			
+			#arreglo tr{
+			
+				width:50%;
+			
+			
+			}
+			
+			#arreglo td{
+				
+				min-height:30px;
+				
+			}
+			
+			#arreglo{
+			
+				margin-left:auto;
+				margin-right:auto;
+			
+			}
+			
+			
+			
+        </style>
+		
+		<script>
+		
+		function aparece(){
+		
+			document.getElementById("activo").style.display="initial";
+		
+		}
+		
+		function desaparece(){
+		
+			document.getElementById("activo").style.display="none";
+		
+		}
+		
+		
+		function hola(){
+		
+			var info=[], g=0;
+			
+			info[0]=document.getElementById("nombre").value;
+			info[1]=document.getElementById("email").value;
+			info[2]=document.getElementById("tel").value;
+			info[3]=document.getElementById("area").value;
+			
+			for(var i=0;i < 4;i++){
+			
+				if(info[i]==""){g++}
+			
+			}
+			
+			for(var i=0;i < 4;i++){
+			
+			console.log(info[i]);
+			
+			}
+			if(g==0){
+			document.getElementById("nono").style.display="none";
+			document.getElementById("terminado").style.display="initial";
+			}
+		}
+		
+		
+		</script>
+		
+    </head>
+    <body>
+	
+	
+	
+	
+	
+		<div id="activo">
+			
+			<button id="cancelor" onclick="desaparece();">
+				<img id="cancelar" src="https://bit.ly/2KcOH52"></img>
+			</button>
+				<div id="nono">
+				<p id="si"><strong>CONTACTO</strong></p>
+				<form style="margin-top:50px;">
+					
+					
+					<input class="cont" type="text" name="nombre" id="nombre" required maxlength="20" minlength="3" placeholder="Nombre" style="margin-top:-10px;"></input>
+					<input class="cont" type="email" name="email" id="email" required minlength="3" placeholder="E-mail" style="margin-top:3px;"></input>
+					<input class="cont" type="number" name="tel" id="tel" required minlength="6" placeholder="Telefono" style="margin-top:3px;"></input>
+					<input class="cont" type="number" name="tel" id="tel" required minlength="6" placeholder="Telefono" style="margin-top:3px;display:none;"></input>
+					<textarea id="area" rows="5"  placeholder="Mensaje" required style="margin-top:3px;"></textarea>
+					<input id="termin" type="submit" onclick="hola()" value="Enviar">
+					
+					
+				</form>
+			</div>
+			<img id="terminado" style="display:none;" src="https://bit.ly/2yuFanv"></img>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		<div id="Header">
+			<header>
+				<div id="virus"><h3>COVID-19: Cuida tu salud y la de los que más quieres con estas recomendaciones.<a href="" id="boton">Ver más...</a></h3></div>
+
+			</header>
+		</div>
+		
+	<div class="contacto">
+		<div class="a">
+			<a href="pagina principal.html"><img src="https://bit.ly/2UTNwxB" id="logo"></img></a>
+		</div>
+
+		<nav class="b">
+			<p class="mover">
+				
+					<a href="" class="ref">Hospitales y Centros</a>
+					<a href="" class="ref">Especialidades</a>
+					<a href="" class="ref">Internados</a>
+					<a href="" class="ref">Propósito Social</a>
+					<button class="conactar" onclick="aparece()">CONTACTO</button>
+				
+			</p>
+		</nav>
+
+	</div>
+	<hr style="margin-top:0;">
+	<h1 id="intro"><strong>Internados</strong></h1>	
+	
+	
+	<div id="orden">
+		
+		<article>
+			<section>
+				<h2>¿Por que con nosotros?</h2>
+				<p class="parrafo1">Impus dacarius natari apalatru ijutu alapas inutu apupu atul amenyi aloto mosodo ajot koswa soltume wasedo mase toljeta louin wepio tamu yustu alsuti muhusu salu
+				amyi agulo amitro dinos manufo qwio alpus malut yomi lpoui syto tozqe mastaq alas nahares mentoi impus dacarius natari apalatru ijutu alapas inutu apupu atul amenyi aloto mosodo ajot koswa soltume wasedo mase toljeta louin wepio tamu yustu alsuti muhusu salu
+				amyi agulo amitro dinos manufo qwio alpus malut yomi lpoui syto tozqe mastaq alas nahares mentoi impus dacarius natari apalatru ijutu alapas inutu apupu atul amenyi aloto mosodo ajot koswa soltume wasedo mase toljeta louin wepio tamu yustu alsuti muhusu salu
+				amyi agulo amitro dinos manufo qwio alpus malut yomi lpoui syto tozqe mastaq alas nahares mentoi</p>
+			</section>
+
+			
+			<section>
+				<figure>
+					<img id="imagen" src="https://bit.ly/2Vv3wFf"></img>
+					<figcaption>
+						<p id="parrafo2">Ospo nisoco akuru apost yuso lagus gurata najomi nao</p>
+					</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>Horarios</h2>
+				<table id="tabla">
+					<tr>
+						<td>Manuru chtu</td>
+						<td>Ajara nu</td>
+					
+					</tr>
+					<tr>
+						<td>gfuju</td>
+						<td>nano</td>
+					
+					</tr>					
+					<tr>
+						<td>wasu</td>
+						<td>sasu</td>
+					
+					</tr>
+					<tr>
+						<td>yugturu</td>
+						<td>frste</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>	
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>
+					<tr>
+						<td>mneco</td>
+						<td>nolto</td>
+					
+					</tr>					
+				</table>
+			</section>
+			<section>
+				<h2>Ventajas</h2>
+				<table id="arreglo">
+					<ul>	
+						<tr>
+							<td><li class="parrafo2">majtu nafa sod</li></td>
+							<td><li class="parrafo2">noko natoyu</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">politl nosuti</li></td>
+							<td><li class="parrafo2">jope nika</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">namaru</li></td>
+							<td><li class="parrafo2">namaru</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">namaru</li></td>
+							<td><li class="parrafo2">majtu nafa sod</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">noko natoyu</li></td>
+							<td><li class="parrafo2">politl nosuti</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">jope nika</li></td>
+							<td><li class="parrafo2">namaru</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">majtu nafa sod</li></td>
+							<td><li class="parrafo2">noko natoyu</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">politl nosuti</li></td>
+							<td><li class="parrafo2">jope nika</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">namaru</li></td>
+							<td><li class="parrafo2">majtu nafa sod</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">noko natoyu</li></td>
+							<td><li class="parrafo2">politl nosuti</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">jope nika</li></td>
+							<td><li class="parrafo2">namaru</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">majtu nafa sod</li></td>
+							<td><li class="parrafo2">noko natoyu</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">politl nosuti</li></td>
+							<td><li class="parrafo2">jope nika</li></td>
+						</tr>
+						<tr>
+							<td><li class="parrafo2">namaru</li></td>
+							<td><li class="parrafo2">jope nika</li></td>
+						</tr>
+						
+					</ul>
+				</table>
+			</section>
+		</article>
+	</div>
+
+		
+
+	
+
+		
+
+		
+    </body>
+</html>
+
+
+
+
+

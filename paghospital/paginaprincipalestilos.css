@@ -1,6 +1,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
+	position: auto;
 	
 }
 
@@ -87,7 +88,6 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	margin-left: 2px;
 	margin-top: 1px;
 	text-align: right;
-
 }
 .contacto{
 	width: auto;
@@ -100,6 +100,7 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	width: 30%;
 	height: 160px;
 	float: left;
+
 }
 
 .b{
@@ -111,43 +112,60 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 
 }
 
-.ref{
-
-	text-decoration: none;
-	font-size: 22px;
-	color: black;
-	padding: 25px;
-	font-family: lato;
-	border-right: 1px solid black;
-
-
+.headerr{
+			margin: auto;
+			width: 100%;
+			margin-top: 50px;
+			margin-left: 105px;
 
 }
 
-.ref:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
-border-radius: 10px;
-
+li, ul{
+			list-style: none;
+}
+.nav li a{
+			
+		
+			text-decoration: none;
+			padding: 15px 20px;
+			display: block;
+			font-size: 22px;
+			color: black;
 }
 
+.nav > li {
+			float: left;
+			border-right: 1px solid black;
+		}
 
+.nav a:hover{
+			background-color: #EAE1FF;
+			border-radius: 10px;
+
+}
+.nav li ul{
+			display: none;
+			position: absolute;
+}
+.nav li:hover > ul{
+			display: block;
+
+}
 .conactar{
 	text-decoration: none;
-	font-size: 22px;
 	color: white;
-	padding: 25px;
 	font-family: lato;
-	background-color: #2E64FE;
+	background-color: #58ACFA;
 	border-radius: 10px;
 
 }
-
-.conactar:hover {
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
+.a{
+	color: black;
 }
+.co{
+	background-color: #F7F3FF;
+	border-radius: 5px;
 
-.mover{
-	margin-top: 70px;
 }
 
 
@@ -170,27 +188,27 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 .d{
 	width: 800px;
 	height: 420px;
-	background-color: ;
+	
 	float: left;
 	text-align: center;
 
 }
 .t{
-	color:#2E64FE; 
+	color:#58ACFA; 
 	font-size: 40px;
 }
 .buscar{
 			
 			
     margin-right: 40px;
-    color: #25aae1;
+    color: black;
     background-color: transparent;  
    	border-style: 2px solid;  
     border-width: 0px 0px 1px 0px;  
     border-color: #25aae1; 
-   	width: 450px;
-	height: 35px;
-	font-size: 20px;
+   	width: 460px;
+	height: 40px;
+	font-size: 25px;
 	font-family: arial;
 
 }
@@ -223,11 +241,11 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	color: black;
 }
 .ti{
-	color: #2E64FE;
+	color: #58ACFA;
 }
 .enviar{
 	padding: 15px;
-	background-color: #2E64FE;
+	background-color: #58ACFA;
 	border-radius: 10px;
 	width: 200px;
 	color: white;
@@ -280,6 +298,13 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	height: 30px;
 }
 
+.ba{
+	float: left;
+	margin-top: 15px;
+	margin: 5px;
+	color: white;
+	font-size: 22px;
+}
 
 
 
