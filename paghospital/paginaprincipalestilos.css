@@ -223,6 +223,7 @@ li, ul{
 	width: auto;
 	height: 100px;
 	background-color:#81DAF5;
+	text-align: center;
 
 }
 
@@ -232,6 +233,7 @@ li, ul{
 	float: left;
 	background-color: #81DAF5;
 	border-right: 1px solid white;
+	text-align: center;
 	
 }
 
@@ -328,6 +330,8 @@ padding-left: 5px; }
 	margin: 5px;
 	color: white;
 	font-size: 22px;
+	text-align: center;
+	padding-left: 10px;
 }
 .btn{
 	padding: 10px 10px 10px 10px;
