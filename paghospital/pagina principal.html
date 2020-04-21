@@ -30,12 +30,8 @@
 		
 	</div>
 	<div id="virus"><h3>COVID-19: Cuida tu salud y la de los que más quieres con estas recomendaciones.<a href="CORONAVIRUS.html" id="boton">Ver más...</a></h3></div>
+		
 	
-
-	<div id="linea">
-		<div id="usuario">Alex Lopez</div>
-		<button class="sesion" onclick="sesion()" id="sesion" >Iniciar Seccion</button>
-	</div>
 	
 
 	<div class="contacto">
@@ -55,7 +51,7 @@
     </ul>
 	</li>
     <li><a href="Internados.html" >Internados</a></li>
-    <li class="w"><a href="" class="conactar" >CONTACTO</a></li> 
+    <li class="w"><a id="sesi" href="javascript:sesion()" class="conactar" >Iniciar sesion</a></li> 
     </ul>
 	</div>
 	</div>	
@@ -102,7 +98,7 @@ el servicio que estás buscando.
 			<table>
 				<tr><td><input  id="nom" type="text"  class="caja" placeholder="Nombre" required ></td><td><input id="asunto" type="text" class="caja" placeholder="Asunto" required></td></tr>
 				<tr><td><input id="email" type="email" class="caja" placeholder="E-mail"required></td><td><input id="hospital" type="text" class="caja" placeholder="Hospital/Unidad" required></td></tr>
-				<tr><td><input id="telefono" type="text" class="caja" placeholder="Teléfono" required></td><td><input  id="mensaje" type="text" class="caja" placeholder="Mensaje" required></td></tr>
+				<tr><td><input id="telefono" type="text" class="caja" placeholder="Teléfono" required></td><td><textarea id="mensaje" type="text" class="text" placeholder="Mensaje" required></textarea></td></tr>
 				
 				
 			</table>
@@ -117,13 +113,13 @@ el servicio que estás buscando.
 	<div class="pie">
 		<div class="con" ><br>
 			<h2 >Suscribete a nuestro newsletter</h2>
-			<input type="text" class="sus" placeholder="Nombre">
-			<input type="e-mail" class="sus" placeholder="E-mail">
-			<input type="text" class="sus" placeholder="Ciudad">
-			<input type="text" class="sus" placeholder="Edad">
-			<input type="text" class="sus"  placeholder="Sexo">
+			<input required type="text" class="sus" placeholder="Nombre"  id="name">
+			<input required type="e-mail" class="sus" placeholder="E-mail"  id="gmail">
+			<input required type="text" class="sus" placeholder="Ciudad"  id="ciudad">
+			<input required type="text" class="sus" placeholder="Edad" id="edad">
+			<input required type="text" class="sus"  placeholder="Sexo"  id="sexo">
 
-			<button>Suscribirme</button>
+			<button class="btn" onclick="sub()">Suscribirme</button>
 
 		</div>
 		<div class="con"><br>
@@ -156,7 +152,7 @@ el servicio que estás buscando.
 		
 	</div>
 	<div class="de">
-		<h4>© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
+		<h4 class="li">© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
 	</div>
 </div>
 

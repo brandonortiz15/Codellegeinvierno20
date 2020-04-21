@@ -196,6 +196,7 @@ li, ul{
 .t{
 	color:#58ACFA; 
 	font-size: 40px;
+	margin-left: 10px;
 }
 .buscar{
 			
@@ -210,6 +211,7 @@ li, ul{
 	height: 40px;
 	font-size: 25px;
 	font-family: arial;
+	margin-left: 10px;
 
 }
 
@@ -221,6 +223,7 @@ li, ul{
 	width: auto;
 	height: 100px;
 	background-color:#81DAF5;
+
 }
 
 .barras{
@@ -229,6 +232,7 @@ li, ul{
 	float: left;
 	background-color: #81DAF5;
 	border-right: 1px solid white;
+	
 }
 
 .caja{
@@ -239,9 +243,23 @@ li, ul{
 	font-size: 25px;
 	border: 1px solid #81DAF5;
 	color: black;
+	font-family: arial;
+}
+
+.text{
+	width: 270px;
+	height: 50px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 25px;
+	border: 1px solid #81DAF5;
+	color: black;
+	font-family: arial;
+
 }
 .ti{
 	color: #58ACFA;
+
 }
 .enviar{
 	padding: 15px;
@@ -262,7 +280,13 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	color:white;
 }
 
-.caja::-webkit-input-placeholder { color: black; } 
+.caja::-webkit-input-placeholder { color: black; 
+padding-left: 5px;} 
+
+.text::-webkit-input-placeholder { color: black;
+padding-top: 10px;
+font-family: arial;
+padding-left: 5px; } 
 
 .con{
 	width: 25%;
@@ -305,6 +329,21 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
 	color: white;
 	font-size: 22px;
 }
+.btn{
+	padding: 10px 10px 10px 10px;
+	color: white;
+	background-color: #58ACFA;
+	border-radius: 10px;
+}
+
+.li{
+	background-color: gray;
+	color: white;
+}
+
+.sus::-webkit-input-placeholder{ 
+color: gray; 
+padding-left:5px;}
 
 
 
