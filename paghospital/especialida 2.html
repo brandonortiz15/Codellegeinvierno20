@@ -29,13 +29,9 @@
 		
 		
 	</div>
-	<div id="virus"><h3>COVID-19: Cuida tu salud y la de los que más quieres con estas recomendaciones.<a href="CORONAVIRUS.html" id="boton">Ver más...</a></h3></div>
 	
-
-	<div id="linea">
-		<div id="usuario">Alex Lopez</div>
-		<button class="sesion" onclick="sesion()" id="sesion" >Iniciar Seccion</button>
-	</div>
+		
+	
 	
 
 	<div class="contacto">
@@ -45,7 +41,7 @@
 <div class="b">
 	 <div class="headerr">
     <ul class="nav">
-    <li><a href="mapa.html">Hospitales y Centros</a></li>
+    <li><a href="Instalaciones.html">Hospitales y Centros</a></li>
     <li><a href="seguros afiliados.html" >Seguros</a></li>
     <li><a href="" >Especialidades</a>
     <ul>
@@ -55,7 +51,7 @@
     </ul>
 	</li>
     <li><a href="Internados.html" >Internados</a></li>
-    <li class="w"><a href="" class="conactar" >CONTACTO</a></li> 
+    <li class="w"><a id="sesi" href="javascript:sesion()" class="conactar" >CONTACTO</a></li> 
     </ul>
 	</div>
 	</div>	
@@ -76,11 +72,15 @@
     
     
     
+    
     <center>
         <table style="width:90%">
           <tr>
-            <th colspan="2"><h1>Especialidades</h1></th>
-           
+              
+            <br>  
+            <th colspan="3"><h1>Especialidades</h1></th>
+            <br>
+              
           </tr>
           <tr>
             <th >
@@ -88,13 +88,22 @@
                 <p id="ajuste" >Nulla sed sem at arcu eleifend placerat. Etiam id turpis et ex bibendum semper. Curabitur maximus dolor in turpis posuere, id feugiat ex aliquam. Aliquam tristique nisi sed neque tincidunt tincidunt. In eleifend, libero eu egestas gravida, lacus urna egestas velit, non posuere felis sem hendrerit orci. Suspendisse laoreet rutrum dolor at malesuada. Nam urna arcu, consequat a libero a, lacinia lobortis lacus.</p>
                 <p id="ajuste" >Suspendisse a iaculis nulla. Sed faucibus gravida turpis quis iaculis. Mauris facilisis suscipit tortor a fringilla. Donec in odio sed quam tempor iaculis. Aenean et sem convallis, vehicula sapien ut, tristique dui. Nulla hendrerit ipsum nec est ornare, sed semper magna maximus. Nullam imperdiet suscipit tellus in lacinia. In feugiat commodo libero nec dictum. Quisque nec odio ante. Nam pretium semper odio, a tempor neque placerat eu. Sed venenatis est a est pulvinar, et aliquet erat fermentum. Praesent et tincidunt augue, ac mattis libero. Cras viverra sollicitudin neque at congue. Mauris eget suscipit justo.</p>
             </th>
-            <td><img src="https://s05.s3c.es/imag/_v0/770x420/9/5/a/700x420_laboratorio-cancer-dreams.jpg" width="620" height="368"></td>
+            <td>
+                <img src="https://image.flaticon.com/icons/svg/1/1625.svg" width="100" height="368">
+            </td>    
+            <td><img src="https://s05.s3c.es/imag/_v0/770x420/9/5/a/700x420_laboratorio-cancer-dreams.jpg" width="570" height="368"></td>
           </tr>
           <tr>
             
           </tr>
         </table>
-            <td style="width:90%"><img src="https://lh3.googleusercontent.com/-6uJtj8U5MfM/Xp9Z5NPM1HI/AAAAAAAABTA/FWsNG8wohVAeS8ntjqyR5pfoR5zEQWk-ACK8BGAsYHg/s0/2020-04-21.png" style="text-align: right" class="g" width="50%" height="300">
+        <br>
+        <br>
+            <td style="width:90%"><img src="https://lh3.googleusercontent.com/-6uJtj8U5MfM/Xp9Z5NPM1HI/AAAAAAAABTA/FWsNG8wohVAeS8ntjqyR5pfoR5zEQWk-ACK8BGAsYHg/s0/2020-04-21.png" style="text-align: right" style="text-align: right" class="g" width="40%" height="300">
+        <br>
+        <br>
+        <br>
+        <br>
         </center>
     
     
@@ -111,21 +120,27 @@
     
     
     
+    
+    
+    
+    
+
 	<div class="barra">
 		
 		
+
 	
 	<br>
 	<div class="pie">
 		<div class="con" ><br>
 			<h2 >Suscribete a nuestro newsletter</h2>
-			<input type="text" class="sus" placeholder="Nombre">
-			<input type="e-mail" class="sus" placeholder="E-mail">
-			<input type="text" class="sus" placeholder="Ciudad">
-			<input type="text" class="sus" placeholder="Edad">
-			<input type="text" class="sus"  placeholder="Sexo">
+			<input required type="text" class="sus" placeholder="Nombre"  id="name">
+			<input required type="e-mail" class="sus" placeholder="E-mail"  id="gmail">
+			<input required type="text" class="sus" placeholder="Ciudad"  id="ciudad">
+			<input required type="text" class="sus" placeholder="Edad" id="edad">
+			<input required type="text" class="sus"  placeholder="Sexo"  id="sexo">
 
-			<button>Suscribirme</button>
+			<button class="btn" onclick="sub()">Suscribirme</button>
 
 		</div>
 		<div class="con"><br>
@@ -158,7 +173,7 @@
 		
 	</div>
 	<div class="de">
-		<h4>© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
+		<h4 class="li">© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
 	</div>
 </div>
 

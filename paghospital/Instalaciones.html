@@ -2,35 +2,9 @@
 <html>
     <head>
         <style>
-			#virus{
-				width: 100%;
-				min-height: 110px;
-				background-color: #2E64FE;
-				padding: 1px;
-				text-align: center;
-				color: white;
-				line-height:40px;
-				
-
-			}
-
-			#boton{
-
-				border-radius: 12px;
-				border:solid #81DAF5 3px;
-				background-color: white;
-				color: #81DAF5;
-				width: 30px;
-				height: 8px;
-				padding: 8px;
-				text-decoration: none;
-				margin-left: 20px;
-				
-			}
+		
 
 
-
-			
 			html, body{
 				margin: 0;
 				padding: 0;
@@ -44,82 +18,10 @@
 
 			}
 			
-			#logo{
-				display:block;
-				max-width:140px;
-				max-height:120px;
-				margin:auto;
-				
-				margin-top:5%;
-				
-			}
 			
 			
+
 			
-			
-			.contacto{
-				width: auto;
-				height: 160px;
-				
-
-			}
-
-			.a{
-				width: 30%;
-				min-height: 160px;
-				float: left;
-				background-color:white;
-			}
-
-			.b{
-				width: 70%;
-				min-height: 160px;
-
-				float: left;
-				text-align: center;
-				line-height:60px;
-				background-color: #F7F3FF;
-			}
-
-			.ref{
-
-				text-decoration: none;
-				font-size: 22px;
-				color: black;
-				padding: 15px;
-				font-family: lato;
-				border-right: 1px solid black;
-				
-
-
-			}
-
-			.ref:hover {
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
-				border-radius: 10px;
-			}
-
-			.conactar{
-				text-decoration: none;
-				font-size: 22px;
-				color: white;
-				padding: 15px;
-				font-family: lato;
-				background-color: #2E64FE;
-				border-radius: 10px;
-				border:0px solid white;
-
-			}
-
-			.conactar:hover {
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.16);
-			}
-
-			.mover{
-				
-				margin-top:5%;
-				
-			}
 			
 			#activo{
 				z-index:100;
@@ -133,7 +35,7 @@
 				
 				margin-left:32%;
 				margin-right:32%;
-				margin-top:100px;
+				margin-top:1%;
 				
 				
 				
@@ -280,25 +182,44 @@
 			
 			}
 			
-			#j{
+	
 			
+			
+			.boxA,  .boxB,  .boxC
+			{
+				width: 30%;
+				margin-top:0px;
+				margin-bottom:30px;
+			}
+
+			.boxA,  .boxB
+			{
+				float: left;
+				margin-right: 5%;
+			}
+
+			.boxC
+			{
+				float: right;
+			}
+			
+			#todo{
+			
+			width:75%;
+			margin:auto;
+			height:700px;
 			
 			}
 			
-			#je{
+			.hola{
 			
 			
-			width:25%;
-			height:400px;
-			margin-left:600px;
-			margin-top:-400px;
-			}	
+				text-align:center;
+				font-size:25px;
+				
 			
-			#jej{
 			
-			margin-top:-80px;
-			float:right;
-			}	
+			}
 
 	
 			
@@ -349,9 +270,10 @@
 		
 		
 		</script>
+		<link rel="stylesheet" type="text/css" href="paginaprincipalestilos.css">
 		
     </head>
-    <body>
+    <body style="overflow-x:hidden;">
 	
 	
 	
@@ -388,33 +310,31 @@
 		
 		
 		
-		<div id="Header">
-			<header>
-				<div id="virus"><h3>COVID-19: Cuida tu salud y la de los que más quieres con estas recomendaciones.<a href="" id="boton">Ver más...</a></h3></div>
+		<div class="contacto">
+		<div class="a">
+		<a href="pagina principal.html"><img src="logo.png"></a>
+	</div>
+<div class="b">
+	 <div class="headerr">
+    <ul class="nav">
+    <li><a href="mapa.html">Hospitales y Centros</a></li>
+    <li><a href="seguros afiliados.html" >Seguros</a></li>
+    <li><a href="" >Especialidades</a>
+    <ul>
+        <li class="co"><a href="especialida 2.html">Laboratorio y Estudios Medicos</a></li>
+         <li class="co"><a href="especialidad 1.html">Cirugias</a></li>
+          <li class="co"><a href="especialidad 3.html">Pediatria</a></li>
+    </ul>
+	</li>
+    <li><a href="Internados.html" >Internados</a></li>
+    <li class="w"><a href="" class="conactar" >CONTACTO</a></li> 
+    </ul>
+	</div>
+	</div>	
+	</div>
 
-			
 		
 		
-			<div class="contacto">
-				<div class="a">
-					<a href="pagina principal.html"><img src="https://bit.ly/2UTNwxB" id="logo"></img></a>
-				</div>
-
-				<nav class="b">
-					<p class="mover">
-						
-							<a href="" class="ref">Hospitales y Centros</a>
-							<a href="" class="ref">Especialidades</a>
-							<a href="" class="ref">Internados</a>
-							<a href="" class="ref">Propósito Social</a>
-							<button class="conactar" onclick="aparece()">CONTACTO</button>
-						
-					</p>
-				</nav>
-		
-			
-			</header>
-		</div>
 		<hr style="margin-top:0;">
 		<h1 id="intro"><strong>Instalaciones</strong></h1>
 		
@@ -432,40 +352,92 @@
 					
 				</section>
 				<section>
-					<figure id="j">
-						<a href="https://bit.ly/3eCt7Fj">
+				<h2>Locaciones</h2>
+					<div id="todo">
+						<div class="boxA">
+							<a style="max-width:75%;" href="https://bit.ly/3eCt7Fj">
+							
+								<img style="max-width:100%;" src="https://bit.ly/2Kqe6bv">
+								
+								
+								</img>
+							</a>
+							<p class="hola">astru ajart guhsthu lpyu nusi aldos</p>
+							<p class="hola" style="color:#aaaaaa;">Tel: 811 1234656734</p>
+						</div>
 						
-							<img src="https://bit.ly/2Kqe6bv">
+						<div class="boxB">
+							<a style="max-width:75%;" href="https://bit.ly/2VuAnvn">
 							
-							
-							</img>
-						</a>
-					</figure>
-					
-					<figure id="je">
-						<a href="https://bit.ly/2VuAnvn">
+								<img style="max-width:100%;" src="https://bit.ly/2VqSuCb">
+								
+								
+								</img>
+							</a>
+							<p class="hola">latu fatu jafti hulhu</p>
+							<p class="hola" style="color:#aaaaaa;">Tel: 811 5637486578</p>
+						</div>
 						
-							<img src="https://bit.ly/2VqSuCb">
+						<div class="boxC">
+							<a style="max-width:75%;" href="https://bit.ly/2XURmbR">
 							
-							
-							</img>
-						</a>
-					</figure>
-					
-					<figure id="jej">
-						<a href="https://bit.ly/2XURmbR">
-						
-							<img src="https://bit.ly/2KArWIJ">
-							
-							
-							</img>
-						</a>
-					</figure>
-					
+								<img style="max-width:100%;" src="https://bit.ly/2KArWIJ">
+								
+								
+								</img>
+							</a>
+							<p class="hola">toprez zeri nohzigl yoto</p>
+							<p class="hola" style="color:#aaaaaa;">Tel: 811 54763234678</p>
+						</div>
+					</div>
 				</section>
 				
 			</article>
-		</div id="orden">
+		</div>
+		<div class="pie">
+		<div class="con" ><br>
+			<h2 >Suscribete a nuestro newsletter</h2>
+			<input type="text" class="sus" placeholder="Nombre">
+			<input type="e-mail" class="sus" placeholder="E-mail">
+			<input type="text" class="sus" placeholder="Ciudad">
+			<input type="text" class="sus" placeholder="Edad">
+			<input type="text" class="sus"  placeholder="Sexo">
+
+			<button>Suscribirme</button>
+
+		</div>
+		<div class="con"><br>
+			<h2>Descarga nuestra App:</h2>
+			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-ios.png.pagespeed.ic.H1M3sw8xli.webp"><br><br>
+			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-android.png.pagespeed.ic.fU6i5Zae_B.webp"><br><br>
+			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-windows.png.pagespeed.ic.RfnmH17gCP.webp">
+		</div>
+		<div class="con" ><br>
+			<h2>Más información</h2>
+			
+				<ol class="mas">–Aseguradoras</ol>
+				<ol class="mas">–Sala de prensa</ol>
+				<ol class="mas">–Espacio saludable</ol>
+				<ol class="mas">–International services</ol>
+				<ol class="mas">–El poder de tu Experiencia</ol>
+				<ol class="mas">–Red de Salud</ol>
+				<ol class="mas">–Investigación</ol>
+			
+
+		      
+		</div>
+		<div class="con"><br>
+			<h2>Uneta a la conversacion</h2>
+			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xfb.png.pagespeed.ic._IT-oYTqFF.webp">
+			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xtw.png.pagespeed.ic.ssxOfwjEil.webp">
+			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xyt.png.pagespeed.ic.VuJYEq0wFK.webp">
+			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xinsta.png.pagespeed.ic.K-DiSyzHK9.webp">
+		</div>
+		
+	</div>
+	<div class="de">
+		<h4>© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
+	</div>
 		
 		
     </body>

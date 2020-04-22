@@ -179,24 +179,23 @@ li, ul{
 
 
 .c{
-	width: 549px;
+	width: 610px;
 	height: 420px;
 	float: left;
 	background-color: #F4EFFF;
 }
 
 .d{
-	width: 800px;
+	width: 739px;
 	height: 420px;
-	
 	float: left;
-	text-align: center;
+	
 
 }
 .t{
 	color:#58ACFA; 
 	font-size: 40px;
-	margin-left: 10px;
+	margin-left: 30px;
 }
 .buscar{
 			
@@ -211,7 +210,7 @@ li, ul{
 	height: 40px;
 	font-size: 25px;
 	font-family: arial;
-	margin-left: 10px;
+	margin-left: 20px;
 
 }
 
@@ -223,7 +222,7 @@ li, ul{
 	width: auto;
 	height: 100px;
 	background-color:#81DAF5;
-	text-align: center;
+	
 
 }
 
@@ -233,9 +232,12 @@ li, ul{
 	float: left;
 	background-color: #81DAF5;
 	border-right: 1px solid white;
-	text-align: center;
-	
+		
 }
+
+
+
+
 
 .caja{
 	width: 270px;
@@ -330,9 +332,21 @@ padding-left: 5px; }
 	margin: 5px;
 	color: white;
 	font-size: 22px;
-	text-align: center;
-	padding-left: 10px;
+	
+	
 }
+
+.u{
+	margin-left: 70px;
+}
+.uu{
+	margin-left: 15px;
+}
+.uuu{
+	margin-left: 55px;
+}
+
+
 .btn{
 	padding: 10px 10px 10px 10px;
 	color: white;
@@ -343,11 +357,18 @@ padding-left: 5px; }
 .li{
 	background-color: gray;
 	color: white;
+	margin: 0px;
+	padding: 0px;
+
 }
 
 .sus::-webkit-input-placeholder{ 
 color: gray; 
 padding-left:5px;}
+
+.de{
+	background-color: gray;
+}
 
 
 
