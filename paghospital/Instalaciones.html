@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+    	<link rel="icon" href="logo.png">
+		<title>Hospital</title>
         <style>
-		
 
 
-			html, body{
-				margin: 0;
-				padding: 0;
-
-			}
-
-			#contenedor{
-				width: auto;
-				height: 100%;
-				overflow: hidden;
-
-			}
 			
 			
+
+			.mover{
+				
+				margin-top:5%;
+				
+			}
 			
 
 			
@@ -221,7 +216,87 @@
 			
 			}
 
-	
+			.pie{
+				width: 100%;
+				height: 480px;
+				background-color: #81DAF5;
+				color:white;
+			}
+
+			.caja::-webkit-input-placeholder { color: black; 
+			padding-left: 5px;} 
+
+			.text::-webkit-input-placeholder { color: black;
+			padding-top: 10px;
+			font-family: arial;
+			padding-left: 5px; } 
+
+			.con{
+				width: 25%;
+				height: 100%;
+				text-align: center;
+				float: left;
+
+
+			}
+
+			.sus{
+				width: 250px;
+				height: 40px;
+				border-radius: 5px;
+				margin: 10px;
+				font-size: 25px;
+				border: 2px solid white;
+				color: white;
+				background-color: #81DAF5;
+			}
+			.mas{
+				font-size: 20px;
+				text-align: left;
+				margin-left: 25px;
+			}
+
+			.di{
+				margin: 10px;
+			}
+			.de{
+				text-align: center;
+				width: 100%;
+				height: 30px;
+			}
+
+			.ba{
+				float: left;
+				margin-top: 15px;
+				margin: 5px;
+				color: white;
+				font-size: 22px;
+				text-align: center;
+				padding-left: 10px;
+			}
+			.btn{
+				padding: 10px 10px 10px 10px;
+				color: white;
+				background-color: #58ACFA;
+				border-radius: 10px;
+			}
+
+			.li{
+				background-color: #81DAF5;
+				color: white;
+				margin: 0px;
+				padding: 0px;
+
+			}
+
+			.sus::-webkit-input-placeholder{ 
+			color: gray; 
+			padding-left:5px;}
+
+			.de{
+				background-color: gray;
+			}
+
 			
         </style>
 		
@@ -270,6 +345,7 @@
 		
 		
 		</script>
+
 		<link rel="stylesheet" type="text/css" href="paginaprincipalestilos.css">
 		
     </head>
@@ -317,7 +393,7 @@
 <div class="b">
 	 <div class="headerr">
     <ul class="nav">
-    <li><a href="mapa.html">Hospitales y Centros</a></li>
+    <li><a href="Instalaciones.html">Hospitales y Centros</a></li>
     <li><a href="seguros afiliados.html" >Seguros</a></li>
     <li><a href="" >Especialidades</a>
     <ul>
@@ -327,12 +403,11 @@
     </ul>
 	</li>
     <li><a href="Internados.html" >Internados</a></li>
-    <li class="w"><a href="" class="conactar" >CONTACTO</a></li> 
+    <li class="w"><a id="sesi" href="javascript:aparece()" class="conactar" >CONTACTO</a></li> 
     </ul>
 	</div>
 	</div>	
 	</div>
-
 		
 		
 		<hr style="margin-top:0;">
@@ -394,52 +469,56 @@
 				
 			</article>
 		</div>
-		<div class="pie">
-		<div class="con" ><br>
-			<h2 >Suscribete a nuestro newsletter</h2>
-			<input type="text" class="sus" placeholder="Nombre">
-			<input type="e-mail" class="sus" placeholder="E-mail">
-			<input type="text" class="sus" placeholder="Ciudad">
-			<input type="text" class="sus" placeholder="Edad">
-			<input type="text" class="sus"  placeholder="Sexo">
-
-			<button>Suscribirme</button>
-
-		</div>
-		<div class="con"><br>
-			<h2>Descarga nuestra App:</h2>
-			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-ios.png.pagespeed.ic.H1M3sw8xli.webp"><br><br>
-			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-android.png.pagespeed.ic.fU6i5Zae_B.webp"><br><br>
-			<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-windows.png.pagespeed.ic.RfnmH17gCP.webp">
-		</div>
-		<div class="con" ><br>
-			<h2>Más información</h2>
-			
-				<ol class="mas">–Aseguradoras</ol>
-				<ol class="mas">–Sala de prensa</ol>
-				<ol class="mas">–Espacio saludable</ol>
-				<ol class="mas">–International services</ol>
-				<ol class="mas">–El poder de tu Experiencia</ol>
-				<ol class="mas">–Red de Salud</ol>
-				<ol class="mas">–Investigación</ol>
-			
-
-		      
-		</div>
-		<div class="con"><br>
-			<h2>Uneta a la conversacion</h2>
-			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xfb.png.pagespeed.ic._IT-oYTqFF.webp">
-			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xtw.png.pagespeed.ic.ssxOfwjEil.webp">
-			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xyt.png.pagespeed.ic.VuJYEq0wFK.webp">
-			<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xinsta.png.pagespeed.ic.K-DiSyzHK9.webp">
-		</div>
 		
-	</div>
-	<div class="de">
-		<h4>© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
-	</div>
+		<footer>
 		
 		
+			<div class="pie">
+				<div class="con" ><br>
+					<h2 >Suscribete a nuestro newsletter</h2>
+					<input required type="text" class="sus" placeholder="Nombre"  id="name">
+					<input required type="e-mail" class="sus" placeholder="E-mail"  id="gmail">
+					<input required type="text" class="sus" placeholder="Ciudad"  id="ciudad">
+					<input required type="text" class="sus" placeholder="Edad" id="edad">
+					<input required type="text" class="sus"  placeholder="Sexo"  id="sexo">
+					<div>
+						<button class="btn" onclick="sub()">Suscribirme</button>
+					</div>
+				</div>
+				<div class="con"><br>
+					<h2>Descarga nuestra App:</h2>
+					<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-ios.png.pagespeed.ic.H1M3sw8xli.webp"><br><br>
+					<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-android.png.pagespeed.ic.fU6i5Zae_B.webp"><br><br>
+					<img src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xbtn-windows.png.pagespeed.ic.RfnmH17gCP.webp">
+				</div>
+				<div class="con" ><br>
+					<h2>Más información</h2>
+					
+						<ol class="mas">–Aseguradoras</ol>
+						<ol class="mas">–Sala de prensa</ol>
+						<ol class="mas">–Espacio saludable</ol>
+						<ol class="mas">–International services</ol>
+						<ol class="mas">–El poder de tu Experiencia</ol>
+						<ol class="mas">–Red de Salud</ol>
+						<ol class="mas">–Investigación</ol>
+					
+
+					  
+				</div>
+				<div class="con"><br>
+					<h2>Uneta a la conversacion</h2>
+					<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xfb.png.pagespeed.ic._IT-oYTqFF.webp">
+					<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xtw.png.pagespeed.ic.ssxOfwjEil.webp">
+					<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xyt.png.pagespeed.ic.VuJYEq0wFK.webp">
+					<img class="di" src="https://www.christusmuguerza.com.mx/wp/wp-content/themes/christus-muguerza/_recursos/images/index/xinsta.png.pagespeed.ic.K-DiSyzHK9.webp">
+				</div>
+				
+				
+				
+			</div><div class="de">
+					<h4 class="li">© Derechos reservados Clinic Name® 2020 | Aviso de Privacidad | Programa Compliance</h4>
+				</div>
+		</footer>
     </body>
 </html>
 

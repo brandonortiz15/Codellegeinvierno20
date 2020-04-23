@@ -80,3 +80,45 @@ function enviar(){
 			
 			}
 		}
+
+		function aparece(){
+		
+			document.getElementById("activo").style.display="initial";
+		
+		}
+		
+		function desaparece(){
+		
+			document.getElementById("activo").style.display="none";
+		
+		}
+		
+		
+		
+		function hola(){
+		
+			var info=[], g=0;
+			
+			info[0]=document.getElementById("nombre").value;
+			info[1]=document.getElementById("email").value;
+			info[2]=document.getElementById("tel").value;
+			info[3]=document.getElementById("asu").value;
+			info[4]=document.getElementById("hos").value;
+			info[5]=document.getElementById("area").value;
+			
+			for(var i=0;i < 6;i++){
+			
+				if(info[i]==""){g++}
+			
+			}
+			
+			for(var i=0;i < 6;i++){
+			
+			console.log(info[i]);
+			
+			}
+			if(g==0){
+			document.getElementById("nono").style.display="none";
+			document.getElementById("terminado").style.display="initial";
+			}
+		}
