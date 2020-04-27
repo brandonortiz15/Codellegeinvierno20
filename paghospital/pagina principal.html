@@ -25,7 +25,7 @@
 		
 		
 
-		<button onclick="iniciar()">Iniciar</button>
+		<button onclick="iniciar()" class="btniniciar">Iniciar</button>
 		
 		
 	</div>
@@ -61,10 +61,18 @@
 		<div class="c"><p class="l"><h2 class="t">Nos encanta ayudarte, escribe
 el servicio que estás buscando.
 
-	
 
-<input type="text" class="buscar" placeholder="Ejemplo: Cirugias">
-</p>
+<input type="text" class="buscar" placeholder="Ejemplo: Cirugías" list="listads" id="opcion"><a href="javascript:entrar()" id="entrara"><img src="loupe_78956 (1).png"></a>
+
+<datalist id="listads" >
+
+  <option><a href="especialidad 1.html" target="_blank">Cirugías</a></option>
+  <option><a href="especialida 2.html">Laboratorio y Estudios Medicos</a></option>
+  <option><a href="especialidad 3.html">Pediatria</a></option>
+
+</datalist>
+
+
 </div>
 		<div class="d"><img src="doctora.jpg"></div>
 	</div>
@@ -116,8 +124,9 @@ el servicio que estás buscando.
 			<input type="checkbox"> He leído y aceptado el Aviso de Privacidad <br>
 			<br>	
 
-			<button onclick="enviar()" class="enviar">Enviar</button>
+			
 		</form>
+		<button onclick="enviar()" class="enviar">Enviar</button>
 		</center>
 	</div>
 	<br>

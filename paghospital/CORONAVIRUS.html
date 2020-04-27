@@ -2,99 +2,14 @@
 <html lang="es-MX">
 	<head>
 		<meta charset="UTF-8">
-        
+        <link rel="icon" href="logo.png">
+
         <title>COVID-19</title>
         <link rel="stylesheet" type="text/css" href="paginaprincipalestilos.css">
         <script  src="pro.js"></script>
     </head>
     <style>
-        .contenedor{
-        width: auto;
-        height: 100%;
-        overflow: hidden;
-
-        }
-
-            
-        .contacto{
-            width: auto;
-            height: 160px;
-            background-color: #F7F3FF;
-            
-        }
-
-        .a{
-            width: 30%;
-            height: 160px;
-            float: left;
-
-        }
-
-        .b{
-            width: 70%;
-            height: 160px;
-            padding-top: 30px;
-            float: left;
-            text-align: center;
-
-        }
-
-        .headerr{
-                    margin: auto;
-                    width: 100%;
-                    margin-top: 50px;
-                    margin-left: 105px;
-
-        }
-
-        li, ul{
-                    list-style: none;
-        }
-        .nav li a{
-                    
-                
-                    text-decoration: none;
-                    padding: 15px 20px;
-                    display: block;
-                    font-size: 22px;
-                    color: black;
-        }
-
-        .nav > li {
-                    float: left;
-                    border-right: 1px solid black;
-                }
-
-        .nav a:hover{
-                    background-color: #EAE1FF;
-                    border-radius: 10px;
-
-        }
-        .nav li ul{
-                    display: none;
-                    position: absolute;
-        }
-        .nav li:hover > ul{
-                    display: block;
-
-        }
-        .conactar{
-            text-decoration: none;
-            
-            color: white;
-            font-family: lato;
-            background-color: #2E64FE;
-            border-radius: 10px;
-
-        }
-        .a{
-            color: black;
-        }
-        .co{
-            background-color: #F7F3FF;
-            border-radius: 5px;
-
-        }
+       
 
         .grid {
             margin-left: 20%;
@@ -111,10 +26,12 @@
             margin: 0;
             padding: 0;
             
-        }
-        .header {
+            overflow-x: hidden;
             
         }
+       
+            
+        
         .banner {
             color: white;
             text-align: center;
@@ -236,6 +153,12 @@
             width: 50%;
             border-right: 1px solid rgba(58, 58, 48, 0.8);
         }
+
+        .trans{
+            margin:50px;
+            text-align: left;
+            font-size: 18px;
+        }
     </style>
 
     <script>
@@ -304,7 +227,7 @@
                     <a href="pagina principal.html"><img src="logo.png"></a>
                 </div>
                 <div class="b">
-                    <div class="header">
+                    <div class="headerr">
                         <ul class="nav">
                             <li><a href="mapa.html">Hospitales y Centros</a></li>
                             <li><a href="seguros afiliados.html" >Seguros</a></li>
@@ -326,7 +249,6 @@
                     <div class="grid">
                         <nav class="navigation">
                             <ul class="navigation__list navigation__list--inline">
-                                <li class="navigation__item"><a href="paginaprincipal.html" class="is-active">INICIO</a></li>
                                 <li class="navigation__item"><a href="#que_es">¿QUÉ ES?</a></li>
                                 <li class="navigation__item"><a href="#sintomas">SÍNTOMAS</a></li>
                                 <li class="navigation__item"><a href="#transmicion">TRANSMICIÓN</a></li>
@@ -381,7 +303,11 @@
                             <td id="t">
                                 <section id="transmicion">
                                     <h1>¿CÓMO SE TRANSMITE?</h1>
-                                    
+
+                                    <p class="trans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit justo eget velit congue convallis. Donec dignissim tortor ac dui fermentum, quis aliquet augue laoreet. Phasellus congue, nisi viverra auctor sodales, turpis risus dictum dui, non vulputate lectus est eget est. Sed sit amet ornare magna. Pellentesque sollicitudin elementum leo id maximus. Morbi eu felis mollis leo sollicitudin fermentum et eget nisi. Proin non tempor quam. Nullam eget magna vel quam fringilla accumsan in a est. Sed congue neque et tempor tempus. Integer placerat leo enim, vel eleifend lectus consectetur in. Maecenas in consectetur massa, a gravida massa. Duis eu euismod dolor. Donec metus orci, pulvinar sit amet ligula in, fringilla semper tortor. Fusce eleifend vestibulum urna eu consectetur.
+                                        <br><br>
+                                    Quisque viverra urna quis eros malesuada porta id sit amet felis. Pellentesque pharetra semper arcu, ac facilisis massa dignissim eu. Aliquam maximus erat at porttitor cursus. In lacinia ligula turpis, ut molestie tortor semper nec. In feugiat nulla at libero sagittis, id pulvinar urna rhoncus. Fusce facilisis ultrices interdum. Ut viverra non eros nec condimentum. Maecenas a aliquet massa. Nullam porta maximus posuere. Donec dapibus odio sed elit dictum, sed accumsan erat rutrum. Curabitur convallis mi eu volutpat interdum. Pellentesque sed enim et purus tempus vestibulum sed eget massa. Vivamus nec turpis hendrerit, viverra est quis, fermentum tellus. Donec luctus tortor enim, quis dignissim urna sollicitudin at.
+                                    </p>
                                 </section>
                             </td>
                             <td id="p">

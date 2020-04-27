@@ -30,6 +30,7 @@ function iniciar(){
 	}
 }
 
+			
 function enviar(){
 
 
@@ -49,14 +50,25 @@ function enviar(){
 			
 			}
 			
-			for(var i=0;i < 4;i++){
+			for(var i=0;i < 6;i++){
 			
 			console.log(info[i]);
 			
 			}
+
+			if (info[0, 1, 2, 3, 4, 5]=="") {
+				window.alert("rellena todos los campos");
+			}else{
+	window.alert("Tu cita a sido agendada"); 
+	
+
+
+			}
+
+			
 		}
 
-		function enviar(){
+		function sub(){
 
 
 			var info=[], g=0;	
@@ -74,7 +86,7 @@ function enviar(){
 			
 			}
 			
-			for(var i=0;i < 4;i++){
+			for(var i=0;i < 5;i++){
 			
 			console.log(info[i]);
 			
@@ -105,6 +117,10 @@ function enviar(){
 			info[3]=document.getElementById("asu").value;
 			info[4]=document.getElementById("hos").value;
 			info[5]=document.getElementById("area").value;
+
+			
+
+				
 			
 			for(var i=0;i < 6;i++){
 			
@@ -121,4 +137,28 @@ function enviar(){
 			document.getElementById("nono").style.display="none";
 			document.getElementById("terminado").style.display="initial";
 			}
+
+
+
+		}
+
+
+
+		function entrar(){
+			var pe = document.getElementById("opcion").value;
+			var pi = document.getElementById("entrara").value;
+
+			 if (pe=="Cirugías") {
+			 	window.open("especialidad 1.html");
+
+			 }
+			 if (pe=="Laboratorio y Estudios Medicos") {
+			 	window.open("especialida 2.html");
+			 }
+			 if (pe=="Pediatria") {
+			 	window.open("especialidad 3.html");
+			 }
+			
+
+
 		}
